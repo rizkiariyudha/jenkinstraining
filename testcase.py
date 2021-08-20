@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-def test_setup(): 
+def test_setup():  
     global driver
     driver = webdriver.Chrome(executable_path="C:/tools/chromedriver.exe")
     driver.maximize_window();
