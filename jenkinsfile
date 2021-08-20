@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Step Two') {
             steps {
-               bat 'copy hasil.txt d:\\latihan'
+				bat 'del d:\\latihan\\hasil.txt'
+                bat 'copy hasil.txt d:\\latihan'
             }
         }
         stage('Step Three') {
